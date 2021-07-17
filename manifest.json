@@ -1,0 +1,18 @@
+{
+    "name": "Scratch Project Full Screen Viewer",
+    "description": "Adds a new full screen button onto Scratch projects. When clicked it will play the project in fullscreen resolution. Press escape to exit.",
+    "version": "1.0",
+    "manifest_version": 2,
+    "content_scripts":[
+        {
+          "matches":["https://scratch.mit.edu/*"],
+          "js":["content.js"]
+        }
+      ],
+      "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+      }
+      
+
+  }
